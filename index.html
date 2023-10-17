@@ -31,7 +31,7 @@
               <a class="nav-link bord" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="nav-link" href="">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li>
               <a class="nav-link" href="">Contacts</a>
@@ -57,7 +57,7 @@
       <section class="main-sect">
         <div class="container">
           <h1 class="main-sect-title">Effective Solutions for Your Business</h1>
-          <button type="submit" class="main-sect-button">
+          <button type="submit" class="main-sect-button" id="openModalButton">
             Order Service
           </button>
         </div>
@@ -274,7 +274,7 @@
       </section>
       <section class="port">
         <div class="container">
-          <h2 class="sect-title port-title">Our Portfolio</h2>
+          <h2 class="sect-title port-title" id="portfolio">Our Portfolio</h2>
           <ul class="list-port">
             <li class="port-card">
               <div class="cards">
@@ -425,15 +425,15 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop is-open" id="myModal">
       <div class="modal-cont">
-        <button type="button" class="close-btn">
+        <button type="button" class="close-btn" id="closeModalButton">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="form-title">Leave your contacts and we will call you back</p>
-        <form class="form">
+        <form class="form" id="myForm">
           <div class="form-item">
             <label class="form-label" for="user-name">Name</label>
             <div class="input-cont">
@@ -481,5 +481,6 @@
         </form>
       </div>
     </div>
+    <script src="modal.js"></script>
   </body>
 </html>
